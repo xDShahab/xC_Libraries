@@ -1,0 +1,7 @@
+RegisterServerEvent('xC_Libraries:ClientErrorLog')
+AddEventHandler('xC_Libraries:ClientErrorLog', function(res, ...)
+    print("-----------------------------------------------------")
+    print("ID: "..source.." | Script: "..res.." | Error: ")
+    print(...)
+    print("-----------------------------------------------------")
+end)
